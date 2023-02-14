@@ -1,0 +1,512 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 48px auto;
+  max-width: 1440px;
+}
+
+.booking {
+  padding-left: 165px;
+  padding-right: 91px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo-icon {
+  margin-right: 502px;
+}
+
+.nav-items {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: 1.5px;
+  color: #242a45;
+}
+
+.nav-item {
+  margin-right: 44px;
+}
+
+.login {
+  background: #fa5959;
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  border-radius: 5px;
+  padding: 12px 33.5px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+}
+
+.description-items {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 108px;
+}
+
+.descriptions {
+  margin-top: 108px;
+  margin-right: 65px;
+}
+
+.title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -0.15px;
+  color: #242a45;
+  margin-bottom: 24px;
+}
+
+.description {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #242a45;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-bottom: 32px;
+}
+
+.description-img {
+  max-width: 579px;
+}
+
+.browser-chrome {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: #ffffff;
+  background: #5267df;
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  border-radius: 5px;
+  padding: 10px 24px;
+  margin-right: 16px;
+}
+
+.browser-firefox {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: #242a45;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  background: #f7f7f7;
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  border-radius: 5px;
+  padding: 10px 24px;
+}
+
+.features {
+  margin-top: 130px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.features-heading {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #242a45;
+}
+
+.features-description {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #242a45;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-top: 16px;
+  margin-bottom: 72px;
+  display: flex;
+  justify-content: center;
+}
+
+.advantages {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.advantage {
+  margin-right: 90.5px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.533333px;
+  color: #242a45;
+}
+
+.advantages-description {
+  display: flex;
+  justify-content: space-around;
+}
+
+.advantage-description {
+  margin-left: 125px;
+  margin-top: 57px;
+  width: 445px;
+}
+
+.advantage-description-header {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 52px;
+  letter-spacing: -0.1px;
+  color: #242a45;
+  margin-bottom: 16px;
+}
+
+.advantage-description-instruction {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #242a45;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-bottom: 32px;
+}
+
+.advantage-description-btn {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: #ffffff;
+  background: #5267df;
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  border-radius: 5px;
+  padding: 10px 24px;
+}
+
+.download-possibilities {
+  display: flex;
+  justify-content: center;
+}
+
+.d-p-text {
+  margin-top: 149px;
+  flex-direction: column;
+}
+
+.d-p-header {
+  display: flex;
+  justify-content: center;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #242a45;
+  margin-bottom: 16px;
+}
+
+.d-p-description {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #242a45;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  width: 540px;
+}
+
+.possibilities {
+  display: flex;
+  margin-top: 48px;
+  justify-content: space-around;
+}
+
+.possibility {
+  background: #ffffff;
+  box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
+  border-radius: 15px;
+  padding: 49px 24px 24px 24px;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  max-width: 280px;
+}
+
+.browser {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #242a45;
+  margin-bottom: 6px;
+  margin-top: 32px;
+}
+
+.version {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  color: #242a45;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.add-btn {
+  margin-top: 60px;
+}
+
+.btn-add {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #ffffff;
+  background: #5267df;
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  border-radius: 5px;
+  padding: 10px 35px;
+}
+
+.firefox {
+  margin-top: 40px;
+}
+
+.opera {
+  margin-top: 80px;
+}
+
+.questions-answers {
+  margin-top: 149px;
+  display: flex;
+  justify-content: center;
+}
+
+.question-text {
+  flex-direction: column;
+}
+
+.q-a-header {
+  justify-content: center;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #242a45;
+  margin-bottom: 16px;
+}
+
+.q-a-description {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #242a45;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  width: 540px;
+  margin-bottom: 76px;
+}
+
+.questions-container {
+  display: flex;
+  justify-content: center;
+}
+
+.question-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 33px;
+  align-items: center;
+}
+
+.question {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #242a45;
+}
+
+.arrow {
+  margin-left: 172.5px;
+}
+
+.q-a-btn-container {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 150px;
+}
+
+.q-a-btn {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: #ffffff;
+  background: #5267df;
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  border-radius: 5px;
+  padding: 10px 24px;
+  width: 114px;
+}
+
+.contact-us-container {
+  background: #5267df;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-us {
+  flex-direction: column;
+  margin-top: 58px;
+}
+
+.joined-people {
+  display: flex;
+  justify-content: center;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 5px;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.stay-up {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #ffffff;
+  width: 408px;
+  margin-bottom: 36px;
+}
+
+.email {
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 10px 112px 10px 20px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: rgba(36, 42, 69, 0.250109);
+}
+
+.contact-us-btn {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: #ffffff;
+  background: #fa5959;
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  border-radius: 5px;
+  padding: 10px 24px;
+}
+
+.email-input {
+  margin-bottom: 74px;
+}
+
+.footer {
+  background: #242a45;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 32px;
+  align-items: center;
+  padding-bottom: 32px;
+}
+
+.infos {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  margin-right: 44px;
+}
+
+.facebook-logo {
+  margin-right: 40px;
+}
+
+.company-logo {
+  margin-right: 63px;
+}
