@@ -5,18 +5,16 @@
 }
 
 .container {
-  margin: 48px auto;
+  margin: 0 auto;
   max-width: 1440px;
 }
 
-.booking {
-  padding-left: 165px;
-  padding-right: 91px;
-}
+
 
 .navbar {
   display: flex;
   justify-content: space-around;
+  margin-top: 48px;
 }
 
 .logo-icon {
@@ -366,18 +364,23 @@
 }
 
 .questions-container {
-  display: flex;
   justify-content: center;
 }
+
 
 .question-container {
   display: flex;
   justify-content: space-between;
   margin-bottom: 33px;
   align-items: center;
+  flex-direction: column;
 }
 
+
+
 .question {
+  border-bottom: 1px solid #242A45 ;
+  padding-bottom: 13px;
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
@@ -453,7 +456,7 @@
 .email {
   background: #ffffff;
   border-radius: 5px;
-  padding: 10px 112px 10px 20px;
+  padding: 10px 0px 10px 20px;
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
@@ -461,6 +464,7 @@
   line-height: 28px;
   letter-spacing: 0.25px;
   color: rgba(36, 42, 69, 0.250109);
+  width: 300px;
 }
 
 .contact-us-btn {
