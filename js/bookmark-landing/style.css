@@ -9,8 +9,6 @@
   max-width: 1440px;
 }
 
-
-
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -34,6 +32,7 @@
 
 .nav-item {
   margin-right: 44px;
+  cursor: pointer;
 }
 
 .login {
@@ -48,6 +47,7 @@
   line-height: 17px;
   text-align: right;
   letter-spacing: 1.5px;
+  cursor: pointer;
   color: #ffffff;
 }
 
@@ -102,6 +102,7 @@
   border-radius: 5px;
   padding: 10px 24px;
   margin-right: 16px;
+  cursor: pointer;
 }
 
 .browser-firefox {
@@ -118,6 +119,7 @@
   box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
   border-radius: 5px;
   padding: 10px 24px;
+  cursor: pointer;
 }
 
 .features {
@@ -154,10 +156,13 @@
   justify-content: center;
 }
 
+
 .advantages {
   display: flex;
   justify-content: center;
   margin-bottom: 72px;
+  border-bottom: 1px  solid #242a45;
+  padding-bottom: 30px;
 }
 
 .advantage {
@@ -170,6 +175,12 @@
   text-align: center;
   letter-spacing: 0.533333px;
   color: #242a45;
+  cursor: pointer;
+  padding-bottom: 30px;
+}
+
+.advantage:hover{
+  border-bottom: 4px  solid #FA5959;
 }
 
 .advantages-description {
@@ -218,6 +229,7 @@
   box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
   border-radius: 5px;
   padding: 10px 24px;
+  cursor: pointer;
 }
 
 .download-possibilities {
@@ -272,6 +284,7 @@
   align-items: center;
   display: flex;
   max-width: 280px;
+  height: 371px;
 }
 
 .browser {
@@ -316,6 +329,7 @@
   box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
   border-radius: 5px;
   padding: 10px 35px;
+  cursor: pointer;
 }
 
 .firefox {
@@ -364,22 +378,20 @@
 }
 
 .questions-container {
-  justify-content: center;
-}
-
-
-.question-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 33px;
-  align-items: center;
-  flex-direction: column;
 }
 
-
+.question-container {
+  margin-bottom: 33px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
 
 .question {
-  border-bottom: 1px solid #242A45 ;
+  border-bottom: 1px solid #242a45;
   padding-bottom: 13px;
   font-family: "Rubik";
   font-style: normal;
@@ -391,6 +403,7 @@
 }
 
 .arrow {
+  cursor: pointer;
   margin-left: 172.5px;
 }
 
@@ -412,6 +425,7 @@
   box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
   border-radius: 5px;
   padding: 10px 24px;
+  cursor: pointer;
   width: 114px;
 }
 
@@ -479,6 +493,7 @@
   background: #fa5959;
   box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
   border-radius: 5px;
+  cursor: pointer;
   padding: 10px 24px;
 }
 
@@ -504,6 +519,7 @@
   text-align: right;
   letter-spacing: 1.5px;
   color: #ffffff;
+  cursor: pointer;
   margin-right: 44px;
 }
 
@@ -513,4 +529,9 @@
 
 .company-logo {
   margin-right: 63px;
+}
+
+.footer-pieces {
+  display: flex;
+  align-items: center;
 }
