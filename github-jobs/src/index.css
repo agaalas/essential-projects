@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+body {
+  background: #F4F6F8;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.jobs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 144px;
+}
+
+.job {
+  padding: 49px 32px 32px 32px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  width: 350px;
+  margin-bottom: 65px;
+  position: relative;
+}
+
+.job-time {
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #6E8098;
+  margin-bottom: 12px;
+}
+
+.job h2 {
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #19202D;
+  margin-bottom: 12px;
+}
+
+.job h3 {
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #6E8098;
+  margin-bottom: 22px;
+}
+
+.job h4 {
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #5964E0;
+}
+
+.img{
+  position: absolute;
+  top: -25px;
+}
+
+.job-link{
+  text-decoration: none;
+}
