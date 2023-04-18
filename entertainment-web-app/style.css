@@ -8,30 +8,74 @@ body {
   background: #10141e;
 }
 
-.entertainment-web__container {
-  margin: 187px auto 250px auto;
+.entertainment-web-movie__container {
+  margin: 32px auto 0 auto;
   width: 1440px;
   display: flex;
-  justify-content: center;
+}
+
+.entertainment-web-movie__sidebar {
+  width: 96px;
+  height: 960px;
+  background: #161d2f;
+  border-radius: 20px;
+  padding: 35px 28px 32px 28px;
+  display: flex;
   flex-direction: column;
+  margin-right: 36px;
+}
+
+.entertainment-web-movie__logo {
+  width: 32px;
+}
+
+.extra {
+  margin-top: 115px;
+}
+
+.entertainment-web-movie__categories {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.entertainment-web-movie__cateegory {
+  margin-bottom: 40px;
+  width: 20px;
+}
+
+.entertainment-web-movie__profile {
+  margin-top: 460px;
+  border: 1px solid #ffffff;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.entertainment-web-movie__input-box {
+  display: flex;
   align-items: center;
 }
 
-.entertainment-web__logo{
+.entertainment-web-movie__input-icon {
   width: 32px;
-  margin-bottom: 83px;
+  margin-right: 24px;
 }
 
-.entertainment-web__login-page {
-  background: #161d2f;
-  border-radius: 20px;
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  padding: 32px 32px;
+.entertainment-web-movie__input {
+  background: none;
+  border: none;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  width: 321px;
 }
 
-.entertainment-web__login-head {
+.entertainment-web-movie__trending-header {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 300;
@@ -39,90 +83,93 @@ body {
   line-height: 40px;
   letter-spacing: -0.5px;
   color: #ffffff;
-  margin-bottom: 40px;
+  margin-top: 34px;
+  margin-bottom: 25px;
 }
 
-.entertainment-web__input {
-  font-family: "Outfit";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 19px;
-  color: #ffffff;
-  mix-blend-mode: normal;
-  opacity: 0.5;
-  background: none;
-  border: none;
-  border-bottom: 1px solid #5a698f;
-  padding-left: 16px;
-  padding-bottom: 17px;
-}
-
-.entertainment-web__input:hover{
-  border-bottom: 1px solid #FFFFFF;
-}
-
-.entertainment-web__password-input {
-  font-family: "Outfit";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 19px;
-  color: rgba(255, 255, 255, 0.5);
-  mix-blend-mode: normal;
-  background: none;
-  border: none;
-  border-bottom: 1px solid #5a698f;
-  padding-left: 16px;
-  padding-bottom: 17px;
-  margin-top: 24px;
-  margin-bottom: 40px;
-}
-
-.entertainment-web__password-input:hover{
-  border-bottom: 1px solid #FFFFFF;
-}
-
-.entertainment-web__login-btn {
-  background: #fc4747;
-  border-radius: 6px;
-  padding: 14.5px 96.5px;
-  font-family: "Outfit";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 19px;
-  text-align: center;
-  color: #ffffff;
-  margin-bottom: 24px;
-  border: none;
-  cursor: pointer;
-}
-
-.entertainment-web__sing-up-container {
+.entertainment-web-movie__trending-movies {
   display: flex;
-  justify-content: center;
 }
 
-.entertainment-web__dont-have-an-account {
+.entertainment-web-movie__trending-movie {
+  width: 470px;
+  height: 230px;
+  background-color: gray;
+  border-radius: 8px;
+  padding-left: 24px;
+  padding-bottom: 24px;
+}
+
+.entertainment-web-movie__movie-categories {
+  display: flex;
+  margin-top: 154px;
+}
+
+.entertainment-web-movie__movie-category {
+  margin-right: 19px;
   font-family: "Outfit";
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
   line-height: 19px;
   color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.75;
 }
 
-.entertainment-web__sign-up-btn {
+.entertainment-web-movie__movie-name {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.entertainment-web-movie__recomened-for-you {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 300;
-  font-size: 15px;
-  line-height: 19px;
-  color: #fc4747;
-  background: none;
-  border: none;
-  margin-left: 9px;
-  cursor: pointer;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  margin-top: 40px;
+  margin-bottom: 32px;
+}
 
+.entertainment-web-movie__recomened-for-you-movies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.entertainment-web-movie__recomened-for-you-movie-img {
+  width: 280px;
+  border-radius: 8px;
+}
+
+.entertainment-web-movie__recomened-for-you-movie-categories {
+  display: flex;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+.entertainment-web-movie__recomened-for-you-movie-category {
+  margin-right: 19px;
+  margin-bottom: 5px;
+}
+
+.entertainment-web-movie__recomened-for-you-movie-name {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
 }

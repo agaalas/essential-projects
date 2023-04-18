@@ -8,28 +8,46 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="entertainment-web__container">
-        <img src="./assets/logo.svg" alt="" class="entertainment-web__logo">
-      <div class="entertainment-web__login-page">
-        <h1 class="entertainment-web__login-head">Login</h1>
-        <input
-          type="text"
-          placeholder="Email address"
-          class="entertainment-web__input"
-        />
-        <input
-          type="text"
-          placeholder="Password"
-          class="entertainment-web__password-input"
-        />
-        <button class="entertainment-web__login-btn">
-          Login to your account
-        </button>
-        <div class="entertainment-web__sing-up-container">
-            <span class="entertainment-web__dont-have-an-account">Don’t have an account?</span>
-            <button class="entertainment-web__sign-up-btn">Sign Up</button>
+    <div class="entertainment-web-movie__container">
+       <div class="entertainment-web-movie__sidebar">
+        <div class="entertainment-web-movie__categories">
+          <img src="./assets/logo.svg" alt="" class="entertainment-web-movie__logo">
+          <img src="./assets/icon-nav-home.svg" alt="" class="entertainment-web-movie__cateegory extra">
+          <img src="./assets/icon-nav-movies.svg" alt="" class="entertainment-web-movie__cateegory">
+          <img src="./assets/icon-nav-tv-series.svg" alt="" class="entertainment-web-movie__cateegory">
+          <img src="./assets/icon-nav-bookmark.svg" alt="" class="entertainment-web-movie__cateegory">
         </div>
-      </div>
+        <img src="./assets/image-avatar.png" alt="" class="entertainment-web-movie__profile">
+       </div>
+       <div class="entertainment-web-movie__movies">
+        <div class="entertainment-web-movie__input-box">
+          <img src="./assets/icon-search.svg" alt="" class="entertainment-web-movie__input-icon">
+          <input type="text" placeholder="Search for movies or TV series" class="entertainment-web-movie__input">
+        </div>
+        <h1 class="entertainment-web-movie__trending-header">Trending</h1>
+        <div class="entertainment-web-movie__trending-movies">
+          <div class="entertainment-web-movie__trending-movie">
+            <div class="entertainment-web-movie__movie-categories">
+              <h4 class="entertainment-web-movie__movie-category">2019</h4>
+              <h4 class="entertainment-web-movie__movie-category">Movie</h4>
+              <h4 class="entertainment-web-movie__movie-category">PG</h4>
+            </div>
+            <h1 class="entertainment-web-movie__movie-name">Beyond Earth</h1>
+          </div>
+        </div>
+        <h1 class="entertainment-web-movie__recomened-for-you">Recomened for you</h1>
+        <div class="entertainment-web-movie__recomened-for-you-movies">
+          <div class="entertainment-web-movie__recomened-for-you-movie">
+            <img src="./assets/thumbnails/the-great-lands/regular/medium.jpg" alt="" class="entertainment-web-movie__recomened-for-you-movie-img">
+            <div class="entertainment-web-movie__recomened-for-you-movie-categories">
+              <h4 class="entertainment-web-movie__recomened-for-you-movie-category">2019</h4>
+              <h4 class="entertainment-web-movie__recomened-for-you-movie-category">Movie</h4>
+              <h4 class="entertainment-web-movie__recomened-for-you-movie-category">PG</h4>
+            </div>
+            <h2 class="entertainment-web-movie__recomened-for-you-movie-name">The Great Lands</h2>
+          </div>
+        </div>
+       </div>
     </div>
   </body>
 </html>

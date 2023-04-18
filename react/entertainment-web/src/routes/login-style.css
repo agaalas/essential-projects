@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #10141e;
+  }
+  
+  .entertainment-web__container {
+    margin: 187px auto 250px auto;
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .entertainment-web__logo{
+    width: 32px;
+    margin-bottom: 83px;
+  }
+  
+  .entertainment-web__login-page {
+    background: #161d2f;
+    border-radius: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 32px;
+  }
+  
+  .entertainment-web__login-head {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+    margin-bottom: 40px;
+  }
+  
+  .entertainment-web__input {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #5a698f;
+    padding-left: 16px;
+    padding-bottom: 17px;
+  }
+  
+  .entertainment-web__input:hover{
+    border-bottom: 1px solid #FFFFFF;
+  }
+  
+  .entertainment-web__password-input {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.5);
+    mix-blend-mode: normal;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #5a698f;
+    padding-left: 16px;
+    padding-bottom: 17px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .entertainment-web__password-input:hover{
+    border-bottom: 1px solid #FFFFFF;
+  }
+  
+  .entertainment-web__login-btn {
+    background: #fc4747;
+    border-radius: 6px;
+    padding: 14.5px 96.5px;
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 24px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .entertainment-web__sing-up-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .entertainment-web__dont-have-an-account {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+    color: #ffffff;
+  }
+  
+  .entertainment-web__sign-up-btn {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+    color: #fc4747;
+    background: none;
+    border: none;
+    margin-left: 9px;
+    cursor: pointer;
+  
+  }
+  
+  .entertainment-web__login-btn:hover {
+    background: #ffffff;
+    border-radius: 6px;
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    color: #161d2f;
+  }
