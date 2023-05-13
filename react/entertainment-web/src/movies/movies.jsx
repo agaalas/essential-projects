@@ -1,8 +1,9 @@
 import React from "react";
 import "./movies-style.css";
 import Sidebar from "./sidebar";
-import Trending from "./trending";
 import RecomenedMovies from "./recomened-movies";
+import TrendingList from "./trending-list";
+import RecomenedList from "./recomened-list";
 
 function Movies() {
   return (
@@ -22,11 +23,11 @@ function Movies() {
           />
         </div>
         <h1 className="entertainment-web-movie__trending-header">Trending</h1>
-        <Trending />
+        <TrendingList />
         <h1 className="entertainment-web-movie__recomened-for-you">
           Recomened for you
         </h1>
-        <RecomenedMovies/>
+        <RecomenedList/>
       </div>
     </div>
   );

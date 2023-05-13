@@ -2,14 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./routes/home";
-import Movies from "./routes/movies/movies";
 import SignUp from "./routes/sign-up/sign-up";
+import Login from "./routes/login/login";
+import Movies from "./movies/movies";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Login />,
   },
   {
     path: "/sign-up",

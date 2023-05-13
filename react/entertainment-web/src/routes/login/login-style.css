@@ -97,6 +97,7 @@
     margin-bottom: 24px;
     border: none;
     cursor: pointer;
+    text-decoration: none;
   }
   
   .entertainment-web__sing-up-container {
@@ -124,7 +125,6 @@
     border: none;
     margin-left: 9px;
     cursor: pointer;
-  
   }
   
   .entertainment-web__login-btn:hover {

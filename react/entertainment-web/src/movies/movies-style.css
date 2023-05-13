@@ -99,11 +99,12 @@
     border-radius: 8px;
     padding-left: 24px;
     padding-bottom: 24px;
+    margin-right: 40px;
+
   }
   
   .entertainment-web-movie__movie-categories {
     display: flex;
-    margin-top: 154px;
   }
   
   .entertainment-web-movie__movie-category {
@@ -142,6 +143,12 @@
   .entertainment-web-movie__recomened-for-you-movies {
     display: flex;
     flex-wrap: wrap;
+    width: 1240px;
+  }
+
+  .entertainment-web-movie__recomened-for-you-movie{
+    margin-right: 20px;
+    margin-bottom: 30px;
   }
   
   .entertainment-web-movie__recomened-for-you-movie-img {
