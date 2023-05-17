@@ -1,23 +1,30 @@
-import React from 'react'
+import React from "react";
 import { data } from "../data/data.js";
-import RecomenedMovies from './recomened-movies.jsx';
+import RecomenedMovies from "./recomened-movies.jsx";
+import styled from "styled-components";
 
+const SRecomenedContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: 1240px;
+`;
 
 function RecomenedList() {
   return (
-    <div className="entertainment-web-movie__recomened-for-you-movies">
-        {data.map((request) => {
+    <SRecomenedContainer>
+      {data.map((request) => {
         return (
-            <RecomenedMovies
+          <RecomenedMovies
             year={request.year}
             category={request.category}
             rating={request.rating}
-            title = {request.title}
-            />
-        )
+            title={request.title}
+            img={request.thumbnail.regular.medium}
+          />
+        );
       })}
-    </div>
-  )
+    </SRecomenedContainer>
+  );
 }
 
-export default RecomenedList
+export default RecomenedList;

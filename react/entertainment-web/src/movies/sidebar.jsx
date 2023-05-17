@@ -1,41 +1,66 @@
 import React from "react";
+import styled from "styled-components";
+
+const SSidebar = styled.div`
+  width: 96px;
+  height: 960px;
+  background: #161d2f;
+  border-radius: 20px;
+  padding: 35px 28px 32px 28px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 36px;
+  align-items: center;
+`;
+
+const SCategories = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const SMovieLogo = styled.img`
+  width: 32px;
+`;
+
+const SCategory = styled.img`
+  margin-bottom: 40px;
+  width: 20px;
+  cursor: pointer;
+`;
+
+const SProfile = styled.img`
+  margin-top: 460px;
+  border: 1px solid #ffffff;
+  width: 40px;
+  border-radius: 50%;
+`;
+
+const SIcons = styled.img`
+  margin-top: 115px;
+  margin-bottom: 40px;
+  width: 20px;
+  cursor: pointer;
+`;
 
 function Sidebar() {
   return (
-    <div className="entertainment-web-movie__sidebar">
-      <div className="entertainment-web-movie__categories">
-        <img
-          src="./assets/logo.svg"
-          alt=""
-          className="entertainment-web-movie__logo"
-        />
-        <img
-          src="./assets/icon-nav-home.svg"
-          alt=""
-          className="entertainment-web-movie__cateegory extra"
-        />
-        <img
-          src="./assets/icon-nav-movies.svg"
-          alt=""
-          className="entertainment-web-movie__cateegory"
-        />
-        <img
+    <SSidebar>
+      <SCategories>
+        <SMovieLogo src="./assets/logo.svg" alt="" />
+        <SIcons src="./assets/icon-nav-home.svg" alt="" />
+        <SCategory src="./assets/icon-nav-movies.svg" alt="" />
+        <SCategory
           src="./assets/icon-nav-tv-series.svg"
           alt=""
-          className="entertainment-web-movie__cateegory"
         />
-        <img
+        <SCategory
           src="./assets/icon-nav-bookmark.svg"
           alt=""
-          className="entertainment-web-movie__cateegory"
         />
-      </div>
-      <img
-        src="./assets/image-avatar.png"
-        alt=""
-        className="entertainment-web-movie__profile"
-      />
-    </div>
+      </SCategories>
+      <SProfile src="./assets/image-avatar.png" alt="" />
+    </SSidebar>
   );
 }
 
