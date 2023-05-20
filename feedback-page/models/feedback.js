@@ -7,6 +7,7 @@ const feedbackSchema = new mongoose.Schema({
   upvotes: Number,
   status: String,
   description: String,
+  comments:[String]
 });
 
 const Feedback = mongoose.model("feedback", feedbackSchema);
