@@ -5,6 +5,11 @@ const dataUrl = __dirname.split(`controllers`)[0] + "data.json";
 const data = fs.readFileSync(dataUrl, "utf-8");
 
 exports.getFeedbacks = async (req, res) => {
+  if(!(req.headers.authorization==="Bearer 788549ala465din")){
+    res.json({
+      status: "fail",
+      message:"You need to login"
+    });  }
   const feedbacks = await Feedback.find();
   res.json({
     status: "succesfull",
@@ -57,3 +62,4 @@ exports.updateFeedback = async (req, res) => {
   });
   res.json({ status: "succesfull" });
 };
+
