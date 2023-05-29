@@ -6,7 +6,7 @@ const {
   removeFeedback,
   updateFeedback,
   addComment,
-} = require("../controllers/controll");
+} = require("../controllers/feedbakc-controller");
 
 const router = express.Router();
 
