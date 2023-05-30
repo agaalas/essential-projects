@@ -44,6 +44,7 @@ const SIcons = styled.img`
 `;
 
 function Sidebar() {
+  const categories=["home","movies","series"]
   return (
     <SSidebar>
       <SCategories>

@@ -212,7 +212,7 @@ export const data = [
     category: "TV Series",
     rating: "PG",
     isBookmarked: false,
-    isTrending: false,
+    isTrending: true,
   },
   {
     title: "The Rockies",
