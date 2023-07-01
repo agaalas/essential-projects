@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f7f8fd;
+}
+
+.comments-container {
+  max-width: 730px;
+  margin: 80px auto 0 auto;
+}
+
+.comments-container__navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.comments-container__button {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #647196;
+  margin-left: 15px;
+}
+
+.comments-container__go-back-btn {
+  background: none;
+  border: none;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #647196;
+  margin-left: 15px;
+}
+
+.comments-container__go-back-btn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration-line: underline;
+  color: #647196;
+}
+
+.edit-button {
+  border: none;
+  background: #4661e6;
+  border-radius: 10px;
+  padding: 12px 25px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #f2f4fe;
+  cursor: pointer;
+}
+
+
+.comments-container__comment {
+  margin-top: 28px;
+}
+
+.comments-container__comments {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 24px 34px 34px 48px;
+}
+
+.comments-container__comments-count {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: #3a4374;
+}
+
+.comments-container__user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comments-container__profile-username {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.194444px;
+  color: #3a4374;
+}
+
+.comments-container__user-nickname {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #647196;
+}
+
+.comments-container__reply-btn {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  color: #4661e6;
+}
+
+.comments-container__user-data {
+  display: flex;
+}
+
+.comments-container__profile-info {
+  margin-left: 32px;
+}
+
+.comments-container__the-comment {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #647196;
+  margin-left: 72px;
+  margin-top: 17px;
+}
+
+.comments-container__add-comment {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 24px 32px 34px 32px;
+  margin-top: 24px;
+}
+
+.comments-container__add-comment-header {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: #3a4374;
+  margin-bottom: 24px;
+}
+
+.comments-container__add-comment-input {
+  background: #f7f8fd;
+  border-radius: 5px;
+  width: 664px;
+  height: 80px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #8c92b3;
+  padding-left: 24px;
+  border: none;
+}
+
+.comments-container__post-comment {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 27px;
+  align-items: center;
+}
+
+.comments-container__characters-count {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #647196;
+}
+
+.comments-container__posting-button {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #f2f4fe;
+  background: #ad1fea;
+  border-radius: 10px;
+  padding: 12px 24px;
+  cursor: pointer;
+  border: none;
+}

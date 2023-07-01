@@ -1,0 +1,50 @@
+import { useContext, useState } from "react";
+import { Navigate, RouterProvider, createBrowserRouter } from "react-router-dom";
+import Home from "../routes/home";
+import NewFeedback from "../routes/new-feedback/new-feedback";
+import FeedbackInfo from "../routes/comment/feedback-info";
+import Login from "../routes/comment/login";
+import SignUp from "../routes/comment/sign-up";
+import { AuthContext } from "./context/auth-context";
+
+const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+        path:"*",
+        element:<Navigate to="/"/>
+    }
+  ]);
+  
+  const accesiblePages = createBrowserRouter([
+    {
+      path: "/new-feedback",
+      element: <NewFeedback />,
+    },
+    {
+      path: "/feedback/:feedbackId",
+      element: <FeedbackInfo />,
+    },
+    {
+      path: "/login",
+      element: <Login />,
+    },
+    {
+      path: "/sign-up",
+      element: <SignUp />,
+    },
+    {
+        path:"*",
+        element:<Navigate to="/login"/>
+    }
+  ]);
+  
+  function Router(){
+   const{token}= useContext(AuthContext)
+    return (
+      <RouterProvider router={token?router:accesiblePages}/>
+    )
+  }
+  export default Router

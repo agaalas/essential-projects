@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .new-feedback__container {
+    margin: 92px auto 0 auto;
+    width: 540px;
+  }
+  
+  body {
+    background: #f7f8fd;
+  }
+  
+  .new-feedback__go-back-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #647196;
+  }
+  
+  .new-feedback__create-new-feedback {
+    margin-top: 40px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 52px 42px 40px 42px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .new-feedback__header {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: -0.333333px;
+    color: #3a4374;
+    margin-bottom: 40px;
+  }
+  
+  .new-feedback__feedback-title-category-detail {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.194444px;
+    color: #3a4374;
+    margin-bottom: 2px;
+  }
+  
+  .new-feedback__title-category-detail-description {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #647196;
+    margin-bottom: 16px;
+  }
+  
+  .new-feedback__title-category-detail-input {
+    background: #f7f8fd;
+    border-radius: 5px;
+    border: none;
+    height: 48px;
+    margin-bottom: 24px;
+    padding-left: 24px;
+  }
+  
+  .different {
+    height: 96px;
+  }
+  
+  .new-feedback__the-btns {
+    display: flex;
+    justify-content: end;
+  }
+  
+  .new-feedback__cancel-btn {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #f2f4fe;
+    background: #3a4374;
+    border-radius: 10px;
+    padding: 12px 24px;
+    margin-right: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .new-feedback__add-feedback-btn {
+    background: #ad1fea;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #f2f4fe;
+    border: none;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,96 @@
+.roadmap {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 19px 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-bar {
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 31px;
+  align-items: center;
+}
+
+.roadmap-item {
+  position: relative;
+  margin-left: 24px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+.roadmap-item::after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  position: absolute;
+  background: #000;
+  left: -20px;
+  top: 6;
+}
+
+.roadmap-item::after:first-child {
+  background-color: #f49f85;
+}
+.roadmap-item:nth-child(2):after {
+  background-color: #ad1fea;
+}
+.roadmap-item:nth-child(3):after {
+  background-color: #62bcfa;
+}
+
+.road-heading {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: #3a4374;
+}
+
+.roadmapp__view {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  text-decoration-line: none;
+  color: #4661e6;
+  mix-blend-mode: normal;
+}
+
+.roadmapp__view:hover {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: #4661e6;
+}
+
+.progress {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #647196;
+}
+
+.roadmapp__view--no-feedback {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  text-decoration-line: none;
+  color: #4661e6;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}

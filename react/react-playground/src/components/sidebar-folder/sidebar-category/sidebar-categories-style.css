@@ -1,0 +1,34 @@
+.categories {
+  background: #ffffff;
+  border-radius: 10px;
+  width: 255px;
+  padding: 24px 50px 24px 24px;
+  margin-bottom: 24px;
+  height: 166px;
+}
+
+.category {
+  background: #f2f4ff;
+  border-radius: 10px;
+  padding: 5px 16px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  color: #4661e6;
+  margin-bottom: 14px;
+  margin-right: 8px;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+}
+
+.category:hover {
+  background-color: #cfd7ff;
+}
+.category--active {
+  background-color: #4661e6;
+  color: #cfd7ff;
+  pointer-events: none
+}
