@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #15161a;
+}
+
+.portfolio-container {
+  padding: 40px 80px;
+  width: 1440px;
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  padding: 4px 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.6),
+    0px 2px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(20px);
+  margin-right: 96px;
+  height: 305px;
+}
+
+.description {
+  display: flex;
+}
+
+.portfolio-description {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 20px;
+  font-family: Inter;
+  line-height: 28px;
+  width: 688px;
+  padding-top: 40px;
+}
+
+.my-img {
+  width: 450px;
+  margin-left: 62px;
+}
+
+.projects-container {
+  margin-top: 55px;
+}
+
+.header {
+  color: var(--adaptive-strong, #fff);
+  font-size: 40px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 48px;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+
+.project {
+  display: flex;
+  width: 550px;
+  height: 340px;
+  padding: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 40px;
+  background: radial-gradient(
+    100% 100% at 50% 0%,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.6),
+    0px 3px 8px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(12px);
+  cursor: pointer;
+}
+
+.project-info {
+  background-image: url("./State=4\ \(1\).jpg");
+  width: 534px;
+  height: 245px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-header {
+  color: var(--adaptive-strong, #fff);
+  font-size: 80px;
+  font-family: Inter;
+  font-weight: 900;
+  line-height: 104px;
+}
+
+.information {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.icon {
+  width: 50px;
+}
+
+.pj-name {
+  color: var(--adaptive-medium, rgba(255, 255, 255, 0.8));
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.contact{
+  display: flex;
+  justify-content: center;
+  margin-top: 160px;
+}
+
+.contact-me{
+  border: none;
+  background: none;
+  color: #FFFFFF;
+  cursor: pointer;
+}

@@ -10,7 +10,10 @@ exports.getFeedbacks = async (req, res) => {
       status: "fail",
       message:"You need to login"
     });  }
-  const feedbacks = await Feedback.find();
+  const feedbacks = await Feedback.find().populate({
+    path:"creator",
+    select:"name surname email"
+  });
   res.json({
     status: "succesfull",
     feedbacks,
@@ -26,10 +29,10 @@ exports.addFeedback = async (req, res) => {
     status: req.body.status,
     description: req.body.description,
     comments: req.body.comments,
-    creator:"64738a8aaf20af39d5f00331"
+    creator:"6474fc36093979997e2baf3b"
   };
   const feedback = await Feedback.create(addedFeedback);
-  res.json(addedFeedback);
+  res.json({status:"succes",addedFeedback});
 };
 
 exports.addComment = async (req, res) => {

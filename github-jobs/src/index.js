@@ -8,7 +8,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 const router = createBrowserRouter([
   {
     path:"/",
-    element: <Home/>
+    element: <Ho  me/>
   },
   {
     path:"/job-info/:jobId",

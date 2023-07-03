@@ -2,33 +2,35 @@ import React, { useState } from "react";
 import Login from "./routes/login/login";
 import SignUp from "./routes/sign-up/sign-up";
 import Movies from "./movies/movies";
-import { Navigate, RouterProvider, createBrowserRouter } from "react-router-dom";
+import {
+  Navigate,
+  RouterProvider,
+  createBrowserRouter,
+} from "react-router-dom";
+import Home from "./routes/home";
 
-const router = createBrowserRouter([
+const protectedRouter = createBrowserRouter([
   {
     path: "/",
-    element: <Movies />,
+    element: <Home />,
+  },
+  {
+    path: "*",
+    element: <Navigate to="/" />,
   },
 ]);
 
-const accesiblePages = createBrowserRouter([
+const accessibleRouter = createBrowserRouter([
   {
-    path: "/sign-up",
-    element: <SignUp />,
-  },
-  {
-    path: "/log-in",
-    element: <Login />,
-  },
-  {
-    path:"*",
-    element:<Navigate to="/log-in"/>
+    path:"/login",
+    element:<Login/>
   }
 ]);
 
-function Router() {
-  const [logged, setLogged] = useState(false);
-  return <RouterProvider router={logged ? router :accesiblePages } />;
+function Router(){
+  const [logged,setLogged]=useState(false)
+  return(
+    <RouterProvider router={logged?protectedRouter:accessibleRouter}/>
+  )
 }
-
-export default Router;
+ export default Router

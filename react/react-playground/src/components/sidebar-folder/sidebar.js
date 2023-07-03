@@ -2,9 +2,11 @@ import { useContext } from "react";
 import Roadmap from "./roadmap.js/roadmap";
 import SidebarCategories from "./sidebar-category/sidebar-categories";
 import { FeedbackContext } from "../context/context";
+import { AuthContext } from "../context/auth-context";
 
 function Sidebar(props) {
   const{filterRequests}=useContext(FeedbackContext)
+  const{logout}=useContext(AuthContext)
  
   return (
     <div className="left-side">
@@ -24,7 +26,10 @@ function Sidebar(props) {
         productDataRequests={props.productDataRequests}
         setProductDataRequests={props.setProductDataRequests}
       />
+      <button className="log-out" onClick={logout}>Log out</button>
     </div>
+  
+
   );
 }
 

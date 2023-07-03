@@ -11,6 +11,7 @@ exports.register = async (req, res) => {
     birthdate,
     socialProfilesFb,
     socialProfilesInsta,
+    gender
   } = req.body;
 
   const newUser = {
@@ -19,6 +20,7 @@ exports.register = async (req, res) => {
     email,
     password,
     birthdate,
+    gender,
 
     socialProfiles: {
       facebook: socialProfilesFb,
