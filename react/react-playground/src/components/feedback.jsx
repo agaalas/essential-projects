@@ -46,7 +46,7 @@ function Feedback(props) {
         </SLikes>
         <SDescription>
           <h2 className="add-tags">
-            <Link className="feedback-link" to={`/comments/${props.id}`}>
+            <Link className="feedback-link" to={`/feedback/${props.id}`}>
               {props.title}
             </Link>
           </h2>

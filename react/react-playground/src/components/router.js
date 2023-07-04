@@ -13,13 +13,6 @@ const router = createBrowserRouter([
       element: <Home />,
     },
     {
-        path:"*",
-        element:<Navigate to="/"/>
-    }
-  ]);
-  
-  const accesiblePages = createBrowserRouter([
-    {
       path: "/new-feedback",
       element: <NewFeedback />,
     },
@@ -27,6 +20,13 @@ const router = createBrowserRouter([
       path: "/feedback/:feedbackId",
       element: <FeedbackInfo />,
     },
+    {
+        path:"*",
+        element:<Navigate to="/"/>
+    }
+  ]);
+  
+  const accesiblePages = createBrowserRouter([
     {
       path: "/login",
       element: <Login />,

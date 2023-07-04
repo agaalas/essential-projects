@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
 
 import { useNavigate, useParams } from "react-router-dom";
-import { productRequests } from "../../data/data";
 
 import "./style.css";
 
 import Feedback from "../../components/feedback";
-import Comments from "./comments";
 import axios from "axios";
 
 function FeedbackInfo() {
