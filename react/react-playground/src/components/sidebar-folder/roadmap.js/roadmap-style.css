@@ -1,17 +1,4 @@
-.roadmap {
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 19px 24px 24px 24px;
-  display: flex;
-  flex-direction: column;
-}
 
-.nav-bar {
-  justify-content: space-between;
-  display: flex;
-  margin-bottom: 31px;
-  align-items: center;
-}
 
 .roadmap-item {
   position: relative;
@@ -41,16 +28,6 @@
 }
 .roadmap-item:nth-child(3):after {
   background-color: #62bcfa;
-}
-
-.road-heading {
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  letter-spacing: -0.25px;
-  color: #3a4374;
 }
 
 .roadmapp__view {

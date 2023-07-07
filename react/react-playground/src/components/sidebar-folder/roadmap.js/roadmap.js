@@ -4,6 +4,31 @@ import RoadmapItem from "./roadmap-item";
 
 import "./roadmap-style.css";
 
+import styled from "styled-components";
+
+const SRoadmap = styled.div`
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 19px 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+`;
+const SNavbar = styled.div`
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 31px;
+  align-items: center;
+`;
+const SHeader = styled.h1`
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: #3a4374;
+`;
+
 function Roadmap(props) {
   const statuses = ["planned", "in-progress", "live"];
   const requestCountsByStatus = productRequests.reduce((acc, curValue) => {
@@ -18,14 +43,21 @@ function Roadmap(props) {
   }, {});
   console.log(requestCountsByStatus);
 
-  return (  
-    <div className="roadmap">
-      <div className="nav-bar">
-        <h2 className="road-heading">Roadmap</h2>
-        <a href="/#" className={props.productDataRequests.length===0? "roadmapp__view--no-feedback" : "roadmapp__view"}>
+  return (
+    <SRoadmap>
+      <SNavbar>
+        <SHeader>Roadmap</SHeader>
+        <a
+          href="/#"
+          className={
+            props.productDataRequests.length === 0
+              ? "roadmapp__view--no-feedback"
+              : "roadmapp__view"
+          }
+        >
           View
         </a>
-      </div>
+      </SNavbar>
       <div className="progress">
         {statuses.map((status) => {
           return (
@@ -37,7 +69,7 @@ function Roadmap(props) {
           );
         })}
       </div>
-    </div>
+    </SRoadmap>
   );
 }
 
