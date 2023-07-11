@@ -5,14 +5,11 @@ import NoFeedback from "./no-feedback/no-feedback";
 import { FeedbackContext } from "./context/context";
 import styled from "styled-components";
 
-const SConten=styled.div`
-
-`
 
 function Content() {
    const{productDataRequests}=useContext(FeedbackContext)
   return (
-    <SConten>
+    <div>
       <Navbar requests={productDataRequests} />
       {productDataRequests.length > 0 ? (
         <FeedbackList
@@ -22,7 +19,7 @@ function Content() {
       ) : (
         <NoFeedback />
       )}
-    </SConten>
+    </div>
   );
 }
 export default Content;

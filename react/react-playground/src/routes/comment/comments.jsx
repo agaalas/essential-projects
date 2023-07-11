@@ -1,15 +1,29 @@
 import React from "react";
 
 import Comment from "./comment";
+import styled from "styled-components";
+
+const SComments = styled.div`
+  margin-top: 28px;
+`;
+const SCommentsCount = styled.h2`
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: #3a4374;
+`;
 
 function Comments(props) {
   console.log(props.comments);
 
   return (
-    <div className="comments-container__comments">
-      <h2 className="comments-container__comments-count">
+    <SComments>
+      <SCommentsCount>
         {props.comments ? props.comments.length : "0"} Comments
-      </h2>
+      </SCommentsCount>
       {props.comments?.map(function (comment) {
         return (
           <Comment
@@ -21,7 +35,7 @@ function Comments(props) {
           />
         );
       })}
-    </div>
+    </SComments>
   );
 }
 

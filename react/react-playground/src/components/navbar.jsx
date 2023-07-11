@@ -83,15 +83,7 @@ function Navbar(props) {
       </div>
       <div className="add-feedback">
         <h3 className="feedback">
-          {" "}
-          <Link
-            to={"/login"}
-            onClick={() => {
-              alert("to write a feedbck you have to be logged in");
-            }}
-          >
-            Add new Feedback
-          </Link>
+          <Link to="/new-feedback">Add new Feedback</Link>
         </h3>
       </div>
     </div>

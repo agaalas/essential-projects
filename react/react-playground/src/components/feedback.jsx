@@ -35,6 +35,7 @@ margin-right: 8px;
 `
 
 function Feedback(props) {
+  
   return (
     <div className="feedback-applications">
       <SFeedback>
