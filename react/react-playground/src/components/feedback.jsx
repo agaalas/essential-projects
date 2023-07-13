@@ -1,6 +1,9 @@
+import axios from "axios";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 
 import styled from "styled-components";
+import { AuthContext } from "./context/auth-context";
 
 const SFeedback = styled.div`
   display: flex;
@@ -27,21 +30,43 @@ const SDescription = styled.div`
   margin-left: 40px;
   margin-right: auto;
 `;
-const SLike=styled.img`
-width: 100%;
+const SLike = styled.img`
+  width: 100%;
 `;
-const SComment=styled.img`
-margin-right: 8px;
-`
+const SComment = styled.img`
+  margin-right: 8px;
+`;
 
 function Feedback(props) {
-  
+  const [title, setTttle] = useState("");
+  const [category, setCategory] = useState("");
+  const [description, setDescription] = useState("");
+  const [getDataAll, token, data] = useContext(AuthContext);
+
+  async function upvoteFeedback() {
+    const config = {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${token}`,
+        "Content-Type": `application/json`,
+      },
+    };
+    try {
+      const response = await axios.post(
+        "https://tutorial-apis.herokuapp.com/api/v1/feedbacks",
+        config
+      );
+      if (data.data.status === "success") {
+        getDataAll();
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
   return (
     <div className="feedback-applications">
       <SFeedback>
-        <SLikes onClick={()=>{
-          props.upvoteRequest(props.id)
-        }}>
+        <SLikes onClick={upvoteFeedback()}>
           <SLike src="./assets/Path 2.png" alt="" className="img-box-like" />
           <h3 className="num">{props.upvotes}</h3>
         </SLikes>
@@ -65,7 +90,7 @@ function Feedback(props) {
           <span
             className={`comment-bar ${
               !props.comments || props.comments?.length === 0
-                ? "comment-zero"  
+                ? "comment-zero"
                 : ""
             }`}
           >
