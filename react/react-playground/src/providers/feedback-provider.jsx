@@ -13,6 +13,7 @@ function FeedbackProvider(props) {
   function upvoteRequest(productId) {}
 
   async function getData() {
+    console.log("hello");
     let data;
     const config = {
       method: "GET",

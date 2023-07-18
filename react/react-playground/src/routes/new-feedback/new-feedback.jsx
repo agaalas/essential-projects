@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import "./style.css";
 import axios from "axios";
@@ -9,6 +9,7 @@ function NewFeedback() {
   const [title, setTttle] = useState("");
   const [category, setCategory] = useState("");
   const [description, setDescription] = useState("");
+  const navigate = useNavigate();
 
   async function addFeedback() {
     const response = await axios.post(
@@ -26,6 +27,10 @@ function NewFeedback() {
         },
       }
     );
+    if (response.data.status==="success") {
+      console.log("hi");
+      navigate("/")
+    }
   }
   return (
     <div className="new-feedback__container">
@@ -74,7 +79,7 @@ function NewFeedback() {
         />
         <div className="new-feedback__the-btns">
           <button className="new-feedback__cancel-btn">Cancel</button>
-          <button className="new-feedback__add-feedback-btn" onClick={addFeedback}>
+          <button className="new-feedback__add-feedback-btn" onClick={addFeedback} >
             Add Feedback
           </button>
         </div>
