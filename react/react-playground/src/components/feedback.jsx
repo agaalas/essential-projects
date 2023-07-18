@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 
 import styled from "styled-components";
 import { AuthContext } from "./context/auth-context";
+import FeedbackProvider from "../providers/feedback-provider";
+import { FeedbackContext } from "./context/context";
 
 const SFeedback = styled.div`
   display: flex;
@@ -38,26 +40,24 @@ const SComment = styled.img`
 `;
 
 function Feedback(props) {
-  const [title, setTttle] = useState("");
-  const [category, setCategory] = useState("");
-  const [description, setDescription] = useState("");
-  const [getDataAll, token, data] = useContext(AuthContext);
+  const {token} = useContext(AuthContext);
+  const {getData} = useContext(FeedbackContext);
 
   async function upvoteFeedback() {
     const config = {
-      method: "POST",
+      method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
         "Content-Type": `application/json`,
       },
     };
     try {
-      const response = await axios.post(
-        "https://tutorial-apis.herokuapp.com/api/v1/feedbacks",
+      const response = await axios.get(
+        `https://tutorial-apis.herokuapp.com/api/v1/feedbacks/upvote/${props.id}`,
         config
       );
-      if (data.data.status === "success") {
-        getDataAll();
+      if (response.data.status === "success") {
+        getData();
       }
     } catch (error) {
       console.log(error);
@@ -66,7 +66,7 @@ function Feedback(props) {
   return (
     <div className="feedback-applications">
       <SFeedback>
-        <SLikes onClick={upvoteFeedback()}>
+        <SLikes onClick={upvoteFeedback}>
           <SLike src="./assets/Path 2.png" alt="" className="img-box-like" />
           <h3 className="num">{props.upvotes}</h3>
         </SLikes>
