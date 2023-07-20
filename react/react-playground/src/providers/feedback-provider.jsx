@@ -18,7 +18,7 @@ function FeedbackProvider(props) {
     const config = {
       method: "GET",
       headers: {
-        Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODc3Yzg3M2ZlNjY2Y2E0ZTFjOTUwNyIsImlhdCI6MTY4NjY4MjIwMSwiZXhwIjoxNjk0NDU4MjAxfQ.i1aSRJVpc0FD-z3o_hVmwE0XrqK7zPWTEDwOwJd58T0`,
+        Authorization: `Bearer ${token}`,
         "Content-Type": `application/json`,
       },
     };
@@ -33,9 +33,7 @@ function FeedbackProvider(props) {
       console.log(error);
     }
   }
-  useEffect(() => {
-    getData();
-  }, [token]);
+
   return (
     <FeedbackContext.Provider
       value={{

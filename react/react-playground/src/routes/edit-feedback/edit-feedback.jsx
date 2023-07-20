@@ -1,13 +1,8 @@
-import React, { useState } from "react";
-
-import { Link, useNavigate } from "react-router-dom";
-
+import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
-import axios from "axios";
 
-import "./style.css";
-
-const SNewFeedbackContainer = styled.div`
+const SEditFeedback = styled.div`
   margin: 92px auto 0 auto;
   width: 540px;
 `;
@@ -15,7 +10,7 @@ const SButtons = styled.div`
   display: flex;
   justify-content: end;
 `;
-const SCreateNewFeedBack = styled.div`
+const SEditOldFeedback = styled.div`
   margin-top: 40px;
   background: #ffffff;
   border-radius: 10px;
@@ -86,7 +81,22 @@ const SCancelBtn = styled.button`
   border: none;
   cursor: pointer;
 `;
-const SAddFeedbackBtn = styled.button`
+const SDeleteBtn = styled.button`
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #f2f4fe;
+  background: #D73737;
+  border-radius: 10px;
+  padding: 12px 24px;
+  margin-right: 16px;
+  border: none;
+  cursor: pointer;
+  margin-right:110px;
+`;
+const SEditFeedbackBtn = styled.button`
   background: #ad1fea;
   border-radius: 10px;
   padding: 12px 24px;
@@ -125,49 +135,21 @@ const STitleInputExtra = styled.textarea`
   padding: 24px;
   height: 96px;
 `;
-
-function NewFeedback() {
-  const [title, setTttle] = useState("");
-  const [category, setCategory] = useState("");
-  const [description, setDescription] = useState("");
-  const navigate = useNavigate();
-
-  async function addFeedback() {
-    const response = await axios.post(
-      "https://tutorial-apis.herokuapp.com/api/v1/feedbacks",
-      {
-        title: title,
-        category: "Feature",
-        description: description,
-      },
-      {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODc3Yzg3M2ZlNjY2Y2E0ZTFjOTUwNyIsImlhdCI6MTY4NjY4MjIwMSwiZXhwIjoxNjk0NDU4MjAxfQ.i1aSRJVpc0FD-z3o_hVmwE0XrqK7zPWTEDwOwJd58T0`,
-          "Content-Type": `application/json`,
-        },
-      }
-    );
-    if (response.data.status === "success") {
-      console.log("hi");
-      navigate("/");
-    }
-  }
-
+function EditFeedback() {
   return (
-    <SNewFeedbackContainer>
+    <SEditFeedback>
       <SGoBackBtn>
         {" "}
         <Link to="/">Go Back</Link>
       </SGoBackBtn>
-      <SCreateNewFeedBack>
+      <SEditOldFeedback>
         <SHeader>Create New Feedback</SHeader>
         <SFeedbackTitle>Feedback Title</SFeedbackTitle>
         <SDescription>Add a short, descriptive headline</SDescription>
         <STitleInput
           type="text"
-          value={title}
-          onChange={(e) => setTttle(e.target.value)}
+          //   value={title}
+          //   onChange={(e) => setTttle(e.target.value)}
         />
         <SFeedbackTitle>Category</SFeedbackTitle>
         <SDescription>Choose a category for your feedback</SDescription>
@@ -175,21 +157,31 @@ function NewFeedback() {
           <span>Feature</span>
           <img src="" alt="" />
         </STitleContainer>
+        <SFeedbackTitle>Update Status</SFeedbackTitle>
+        <SDescription>Change feedback state</SDescription>
+        <STitleInput
+          type="text"
+          //   value={description}
+          //   onChange={(e) => setDescription(e.target.value)}
+        />
         <SFeedbackTitle>Feedback Detail</SFeedbackTitle>
         <SDescription>
           Include any specific comments on what should be improved, added, etc.
         </SDescription>
         <STitleInputExtra
           type="text"
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
+          //   value={description}
+          //   onChange={(e) => setDescription(e.target.value)}
         />
+
         <SButtons>
+          <SDeleteBtn>Delete</SDeleteBtn>
           <SCancelBtn>Cancel</SCancelBtn>
-          <SAddFeedbackBtn onClick={addFeedback}>Add Feedback</SAddFeedbackBtn>
+          <SEditFeedbackBtn>Add Feedback</SEditFeedbackBtn>
         </SButtons>
-      </SCreateNewFeedBack>
-    </SNewFeedbackContainer>
+      </SEditOldFeedback>
+    </SEditFeedback>
   );
 }
-export default NewFeedback;
+
+export default EditFeedback;

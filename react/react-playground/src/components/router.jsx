@@ -6,6 +6,7 @@ import FeedbackInfo from "../routes/comment/feedback-info";
 import Login from "../routes/comment/login";
 import SignUp from "../routes/comment/sign-up";
 import { AuthContext } from "./context/auth-context";
+import EditFeedback from "../routes/edit-feedback/edit-feedback";
 
 const router = createBrowserRouter([
     {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
     {
       path: "/feedback/:feedbackId",
       element: <FeedbackInfo />,
+    },
+    {
+      path: "/edit-feedback",
+      element: <EditFeedback />,
     },
     {
         path:"*",

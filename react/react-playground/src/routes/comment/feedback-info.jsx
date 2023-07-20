@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 import "./style.css";
 
@@ -38,16 +38,16 @@ const SGoBackBtnB = styled.div`
   color: #647196;
   margin-left: 15px;
   :hover {
-  cursor: pointer;
-  text-decoration: underline;
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
-  text-decoration-line: underline;
-  color: #647196;
-}
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #647196;
+  }
 `;
 const SEditFeedback = styled.div`
   border: none;
@@ -189,7 +189,9 @@ function FeedbackInfo() {
           </SGoBackBtnB>
         </SGoBAckBtn>
         <SEditFeedbackb>
-          <SEditFeedback>Edit Feedback</SEditFeedback>
+          <Link to="/edit-feedback">
+            <SEditFeedback>Edit Feedback</SEditFeedback>
+          </Link>
         </SEditFeedbackb>
       </SNavbar>
       <SCommentboxFeedback>
